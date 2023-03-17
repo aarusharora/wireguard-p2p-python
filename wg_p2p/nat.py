@@ -297,3 +297,5 @@ def get_ip_info(source_ip='0.0.0.0', source_port=54320, stun_host=None,
     s.close()
     return (nat_type, external_ip, external_port)
 
+if __name__ == '__main__':
+    get_ip_info(source_port=51820)
